@@ -1,13 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <h2>URN 1234567</h2>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Article: Advanced Techniques in Manufacturing Engineering</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the page */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .banner-gradient {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa);
+        }
+        .section-title {
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+        }
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Banner -->
+    <header class="banner-gradient text-white shadow-lg">
+        <div class="container mx-auto px-6 py-12 md:py-20 text-center">
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight">
+                Revolutionizing Production: A Study on AI-Driven Predictive Maintenance in Smart Factories
+            </h1>
+            <p class="mt-4 text-lg md:text-xl font-medium text-blue-100">
+                A Conference Paper by [Your Name]
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <div class="max-w-4xl mx-auto">
+
+            <!-- Abstract Section -->
+            <section id="abstract" class="mb-12">
+                <h2 class="text-3xl font-bold mb-4 section-title">Abstract</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        This paper presents a comprehensive study on the integration of Artificial Intelligence (AI) for predictive maintenance within the framework of smart manufacturing. We propose a novel deep learning model that analyzes real-time sensor data from production machinery to predict potential failures with high accuracy. Our findings demonstrate a significant reduction in unplanned downtime and maintenance costs, leading to a more efficient, reliable, and sustainable manufacturing process. The research highlights the transformative potential of AI in modern industrial engineering and offers a practical roadmap for its implementation.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Publication Details Section -->
+            <section id="publication" class="mb-12">
+                <h2 class="text-3xl font-bold mb-4 section-title">Publication Details</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <ul class="space-y-3 text-lg text-gray-700">
+                        <li><strong>Conference:</strong> International Symposium on Advanced Manufacturing (ISAM 2025)</li>
+                        <li><strong>Location:</strong> London, UK</li>
+                        <li><strong>Date:</strong> September 5-7, 2025</li>
+                        <li><strong>DOI:</strong> <a href="#" class="text-blue-600 hover:underline">10.1234/isam.2025.5678</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Key Figures Section -->
+            <section id="figures" class="mb-12">
+                <h2 class="text-3xl font-bold mb-4 section-title">Key Figures & Results</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Figure 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Model+Architecture" alt="Diagram of the predictive model architecture" class="w-full h-auto object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Figure 1: Predictive Model Architecture</h3>
+                            <p class="text-gray-600 mt-1">A visual representation of the neural network layers used for failure prediction.</p>
+                        </div>
+                    </div>
+                    <!-- Figure 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Performance+Chart" alt="Chart showing model performance vs traditional methods" class="w-full h-auto object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Figure 2: Performance Comparison</h3>
+                            <p class="text-gray-600 mt-1">Chart comparing the predictive accuracy of our model against traditional maintenance schedules.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Download Button Section -->
+            <section id="download" class="text-center">
+                 <h2 class="text-3xl font-bold mb-4 section-title">Access the Full Article</h2>
+                <a href="#" class="inline-block bg-blue-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
+                    Download PDF
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+                <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-white">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <img src="WebBanner.png" alt="Banner" width="900" height="300">
-</head>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
