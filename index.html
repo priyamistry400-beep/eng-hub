@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conference Article: Advanced Techniques in Manufacturing Engineering</title>
+    <title>Manufacturing Engineering: Bridging Innovation and Efficiency</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* Custom styles for the page */
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -29,6 +32,13 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
+        .citation a {
+            color: #2563eb;
+            font-weight: 500;
+        }
+        .citation a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -37,70 +47,158 @@
     <header class="banner-gradient text-white shadow-lg">
         <div class="container mx-auto px-6 py-12 md:py-20 text-center">
             <h1 class="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight">
-                Revolutionizing Production: A Study on AI-Driven Predictive Maintenance in Smart Factories
+                Manufacturing Engineering: Bridging Innovation and Efficiency in Modern Production
             </h1>
             <p class="mt-4 text-lg md:text-xl font-medium text-blue-100">
-                A Conference Paper by [Your Name]
+                A Conference Paper by Priya Mistry
             </p>
         </div>
     </header>
 
+    <!-- Table of Contents -->
+    <section class="container mx-auto px-6 py-10">
+        <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md card">
+            <h2 class="text-2xl font-bold mb-4 text-center text-gray-800 border-b pb-3">Table of Contents</h2>
+            <ul class="space-y-2 mt-4 text-lg text-center grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                <li><a href="#abstract" class="font-medium text-blue-600 hover:underline">1. Abstract</a></li>
+                <li><a href="#introduction" class="font-medium text-blue-600 hover:underline">2. Introduction</a></li>
+                <li><a href="#scope" class="font-medium text-blue-600 hover:underline">3. Scope & Core Functions</a></li>
+                <li><a href="#tech-enablers" class="font-medium text-blue-600 hover:underline">4. Technological Enablers</a></li>
+                <li><a href="#evolution" class="font-medium text-blue-600 hover:underline">5. Evolution & Future</a></li>
+                <li><a href="#implications" class="font-medium text-blue-600 hover:underline">6. Practical Implications</a></li>
+                <li><a href="#key-components" class="font-medium text-blue-600 hover:underline">7. Key Components Table</a></li>
+                <li><a href="#references" class="font-medium text-blue-600 hover:underline">8. References</a></li>
+            </ul>
+        </div>
+    </section>
+
     <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
+    <main class="container mx-auto px-6 py-2">
         <div class="max-w-4xl mx-auto">
 
             <!-- Abstract Section -->
-            <section id="abstract" class="mb-12">
+            <section id="abstract" class="mb-12 pt-8">
                 <h2 class="text-3xl font-bold mb-4 section-title">Abstract</h2>
                 <div class="bg-white p-6 rounded-lg shadow-md card">
                     <p class="text-lg leading-relaxed text-gray-700">
-                        This paper presents a comprehensive study on the integration of Artificial Intelligence (AI) for predictive maintenance within the framework of smart manufacturing. We propose a novel deep learning model that analyzes real-time sensor data from production machinery to predict potential failures with high accuracy. Our findings demonstrate a significant reduction in unplanned downtime and maintenance costs, leading to a more efficient, reliable, and sustainable manufacturing process. The research highlights the transformative potential of AI in modern industrial engineering and offers a practical roadmap for its implementation.
+                        Manufacturing engineering is a dynamic and interdisciplinary field focused on designing, optimizing, and operating systems that transform raw materials into high-quality products. Blending elements of industrial, mechanical, and systems engineering, it emphasizes lean manufacturing, automation, digital technologies, and sustainability. Today’s manufacturing engineer leverages tools such as CAD, CAM, CAE, robotics, IIoT, and digital twins to enhance production efficiency, quality, and cost-effectiveness. The field’s evolution continues to be driven by Industry 4.0, smart factories, and data-driven decision-making. This article explores manufacturing engineering’s foundational principles, technological advancements, and future directions, framed by real-world applications and scholarly insights.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Introduction Section -->
+            <section id="introduction" class="mb-12 pt-8">
+                <h2 class="text-3xl font-bold mb-4 section-title">Introduction</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md card citation">
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Manufacturing engineering, a sub-discipline closely tied to industrial and mechanical engineering, focuses on developing efficient, cost-effective, and high-quality systems to produce physical products. This discipline applies scientific, mathematical, and engineering principles to design manufacturing processes while integrating facilities and systems to optimize resource use and product quality <a href="#ref-wikipedia">[4]</a>.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Scope and Core Functions Section -->
+            <section id="scope" class="mb-12 pt-8">
+                <h2 class="text-3xl font-bold mb-4 section-title">The Scope and Core Functions</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md card citation">
+                    <p class="text-lg leading-relaxed text-gray-700 space-y-4">
+                        Manufacturing engineers are responsible for everything from process and tool design to facility layout, automation, and system optimization. They employ methodologies like lean manufacturing, just-in-time production, and agile manufacturing to increase productivity and reduce waste <a href="#ref-wikipedia">[4]</a>. According to an AskEngineers discussion, their role includes implementing, maintaining, troubleshooting, and refining manufacturing processes—answering fundamental questions like "How do we manufacture a design faster, cheaper, and more consistently?" <a href="#ref-reddit">[5]</a>.
+                        <br><br>
+                        Beyond day-to-day operations, manufacturing engineering draws upon diverse knowledge areas such as human factors, operations research, and management systems engineering to create integrated, optimized production systems <a href="#ref-wikipedia">[4]</a>.
                     </p>
                 </div>
             </section>
 
-            <!-- Publication Details Section -->
-            <section id="publication" class="mb-12">
-                <h2 class="text-3xl font-bold mb-4 section-title">Publication Details</h2>
-                <div class="bg-white p-6 rounded-lg shadow-md card">
-                    <ul class="space-y-3 text-lg text-gray-700">
-                        <li><strong>Conference:</strong> International Symposium on Advanced Manufacturing (ISAM 2025)</li>
-                        <li><strong>Location:</strong> London, UK</li>
-                        <li><strong>Date:</strong> September 5-7, 2025</li>
-                        <li><strong>DOI:</strong> <a href="#" class="text-blue-600 hover:underline">10.1234/isam.2025.5678</a></li>
+            <!-- Technological Enablers Section -->
+            <section id="tech-enablers" class="mb-12 pt-8">
+                <h2 class="text-3xl font-bold mb-4 section-title">Technological Enablers</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md card citation">
+                    <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                       Recent decades have seen exponential advancements in technology that empower manufacturing engineering:
+                    </p>
+                    <ul class="space-y-4 text-lg text-gray-700">
+                        <li><strong>Computer-Aided Technologies:</strong> CAD, CAM, and CAE tools—including FEA and CFD simulations—allow engineers to visualize, model, and refine products and processes before physical instantiation, enhancing efficiency and reducing cost <a href="#ref-wikipedia">[4]</a>.</li>
+                        <li><strong>Automation and Robotics:</strong> Automated systems, CNC machinery, and robotic arms handle repetitive tasks with precision and consistency. This trend, pioneered in the 1970s, remains pivotal in high-volume industries such as automotive and electronics <a href="#ref-wikipedia">[4]</a>.</li>
+                        <li><strong>Smart Manufacturing & Industry 4.0:</strong> The integration of cyber-physical systems, IIoT, and flexible, data-driven technologies enables “smart factories” that are adaptive, resource-efficient, and customer-responsive <a href="#ref-barari-2023">[2]</a>, <a href="#ref-mittal-2019">[3]</a>. For example, a literature review on IIoT intelligence highlights a layered framework where data from networked sensors drives real-time optimization across manufacturing systems—supported by case studies in lighthouse factories <a href="#ref-hu-2023">[1]</a>.</li>
+                        <li><strong>Digital Twins:</strong> Particularly in additive manufacturing, digital twins—virtual replicas of physical machines—enable real-time monitoring and process optimization via ML, AR, and simulation. Challenges include integration, scalability, and computational demands <a href="#ref-hu-2023">[1]</a>.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Evolution and Future Directions Section -->
+            <section id="evolution" class="mb-12 pt-8">
+                <h2 class="text-3xl font-bold mb-4 section-title">Evolution and Future Directions</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md card citation">
+                     <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                        Manufacturing engineering originated in early 20th-century “tool-and-die” disciplines and increasingly embraced automation, statistical quality control, and robotics from the 1960s onward <a href="#ref-wikipedia">[4]</a>. Today, the field continues to evolve through:
+                    </p>
+                     <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                        <li>Digital transformation, with greater integration of data analytics, AI, and networked operations.</li>
+                        <li>Sustainability, emphasizing eco-friendly materials, energy-efficient processes, and lifecycle analysis.</li>
+                        <li>Global competitiveness, where advanced manufacturing fosters innovation—but also demands infrastructure, policy support, and investment, as seen in challenges facing UK manufacturing <a href="#ref-times">[6]</a>.</li>
                     </ul>
                 </div>
             </section>
 
-            <!-- Key Figures Section -->
-            <section id="figures" class="mb-12">
-                <h2 class="text-3xl font-bold mb-4 section-title">Key Figures & Results</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Figure 1 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden card">
-                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Model+Architecture" alt="Diagram of the predictive model architecture" class="w-full h-auto object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold text-lg">Figure 1: Predictive Model Architecture</h3>
-                            <p class="text-gray-600 mt-1">A visual representation of the neural network layers used for failure prediction.</p>
-                        </div>
-                    </div>
-                    <!-- Figure 2 -->
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden card">
-                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Performance+Chart" alt="Chart showing model performance vs traditional methods" class="w-full h-auto object-cover">
-                        <div class="p-4">
-                            <h3 class="font-semibold text-lg">Figure 2: Performance Comparison</h3>
-                            <p class="text-gray-600 mt-1">Chart comparing the predictive accuracy of our model against traditional maintenance schedules.</p>
-                        </div>
-                    </div>
+            <!-- Practical Implications and Industry Trends Section -->
+            <section id="implications" class="mb-12 pt-8">
+                <h2 class="text-3xl font-bold mb-4 section-title">Practical Implications and Industry Trends</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Manufacturing engineers are integral across sectors—automotive, aerospace, consumer electronics, and beyond. Field professionals must be adept in systems thinking, digital tools, lean methodologies, and continuous improvement. As technology and market demands evolve, manufacturing engineering will remain a linchpin for innovation and operational excellence.
+                    </p>
                 </div>
             </section>
 
-            <!-- Download Button Section -->
-            <section id="download" class="text-center">
-                 <h2 class="text-3xl font-bold mb-4 section-title">Access the Full Article</h2>
-                <a href="#" class="inline-block bg-blue-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
-                    Download PDF
-                </a>
+            <!-- Key Components Table Section -->
+            <section id="key-components" class="mb-12 pt-8">
+                <h2 class="text-3xl font-bold mb-4 section-title">Key Components of Manufacturing Engineering</h2>
+                <div class="bg-white rounded-lg shadow-md card overflow-x-auto">
+                    <table class="w-full text-lg text-left">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="p-4 font-semibold">Component</th>
+                                <th class="p-4 font-semibold">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y">
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 font-medium">Process & Facility Design</td>
+                                <td class="p-4">Workflow development, facility layout, and process planning.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 font-medium">Automation & Robotics</td>
+                                <td class="p-4">Application of CNC, robots, and automated systems for efficiency.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 font-medium">Digital Tools</td>
+                                <td class="p-4">Use of CAD, CAM, CAE, PLM for design, simulation, and production planning.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 font-medium">Smart Technologies</td>
+                                <td class="p-4">IIoT, digital twins, AI-driven systems for real-time responsiveness.</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="p-4 font-medium">Lean & Analytics</td>
+                                <td class="p-4">Lean principles, Six Sigma, data-driven optimization for quality and cost.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- References Section -->
+            <section id="references" class="mb-12 pt-8">
+                <h2 class="text-3xl font-bold mb-4 section-title">References</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md card">
+                    <ol class="list-decimal list-inside space-y-4 text-lg text-gray-700">
+                        <li id="ref-hu-2023">Hu, Y., et al., 2023. Industrial Internet of Things Intelligence Empowering Smart Manufacturing: A Literature Review. Available at: <a href="https://arxiv.org/abs/2301.05089" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">arXiv:2301.05089</a>.</li>
+                        <li id="ref-barari-2023">Barari, A. & Tsuzuki, M. S., 2023. Smart Manufacturing and Industry 4.0. <em>Applied Sciences</em>, 13(3), p.1545. Available at: <a href="https://doi.org/10.3390/app13031545" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://doi.org/10.3390/app13031545</a>.</li>
+                        <li id="ref-mittal-2019">Mittal, S., et al., 2019. Smart Manufacturing: Characteristics, Technologies and Enabling Factors. <em>Proc. IMechE Part B: Journal of Engineering Manufacture</em>, 233(5), pp.1342–1361. Available at: <a href="https://doi.org/10.1177/0954405417736547" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://doi.org/10.1177/0954405417736547</a>.</li>
+                        <li id="ref-wikipedia">Wikipedia contributors, 2024. Manufacturing engineering. In <em>Wikipedia, The Free Encyclopedia</em>. Available at: <a href="https://en.wikipedia.org/wiki/Manufacturing_engineering" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://en.wikipedia.org/wiki/Manufacturing_engineering</a>.</li>
+                        <li id="ref-reddit">Reddit Community, AskEngineers subreddit discussion. <em>Note: Specific thread not cited in source text.</em></li>
+                        <li id="ref-times">The Times. <em>Note: Specific article not cited in source text.</em></li>
+                    </ol>
+                </div>
             </section>
 
         </div>
@@ -111,37 +209,15 @@
         <div class="container mx-auto px-6 py-8 text-center">
             <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
             <div class="flex justify-center space-x-6 mt-4">
-                <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
-                <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
-                <a href="#" class="text-gray-400 hover:text-white">Email</a>
+                <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">GitHub</a>
+                <a href="https://linkedin.com/in/[your-username]" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">LinkedIn</a>
+                <a href="mailto:[your-email@example.com]" class="text-gray-400 hover:text-white">Email</a>
             </div>
         </div>
     </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
